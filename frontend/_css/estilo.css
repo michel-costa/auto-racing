@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+/*Estilo do corpo da Página */
+body {
+
+background: linear-gradient(to bottom, #50e2d4 60%, #2f867e 100%);
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana,
+sans-serif;
+line-height: 1.6;
+}
+
+
+/*Aqui começa as Sections*/
+section#container {
+margin: 0 auto;
+width: 70%;
+}
+
+section#places {
+color: #000;
+float: left;
+width: 69%;
+}
+
+
+section#places h2 {
+margin: 0%;
+}
+
+section#places img {
+border: 1px solid #7E9F19;
+float: left;
+margin: 01.0416666% 01.0416666% 0% 0%; 
+padding: 00.2083333%; 
+}
+
+/*Aqui começa os Articles*/
+article img {
+border: 1px solid #7E9F19;
+float: left;
+margin: 01.0416666% 01.0416666% 01.0419999% 0%;
+padding: 00.2083333%;
+height: 10%;
+width: 50%;
+}
+
+article {
+background-color: #e6ffff;
+border: 1px solid #CCC;
+border-color: #CCC #999 #999 #CCC;
+margin-bottom: 2%; 
+padding: 1%;
+} 
+
+/* Aqui entra  um link*/
+article a { 
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-ms-transition: background-color 1s;
+-o-transition: background-color 1s;
+transition: background-color 1s;
+}
+
+
+article h2 {
+border-bottom: 1px dashed #7E9F19;
+margin: 0;
+}
+  
+/* Formatação de links*/
+h1 a { 
+color: #7E9F19;
+text-decoration: none;
+}
+    
+h1 a:hover { 
+background-color: #7E9F19;
+color: #FFF;
+}
+    
+article a:hover {
+background-color: #5bff00; 
+text-decoration: underline;
+}
+    
+
+/* Formatando do Vídeo article multimidia*/
+article video {
+border: 1px solid #7E9F19;
+float: left;
+margin: 01% 1% 01% 0%;
+padding: 00.2083333%;
+height: 0%;
+width: 100%;
+}
+  
+
+
+
+/*Aqui comça o Aside*/
+aside {
+background-color: #a6a6a6; /* cor cinza do lado direito*/
+border: 1px solid #ffffff; /* cor da borda*/
+float: right;
+padding: 1%;
+width: 27%; 
+}
+
+aside h3 {
+font-size: 1em;
+margin-top: 0;
+}
+
+aside  h2 {
+text-align: center; 
+color: #ffffff;   
+}
+
+aside audio {
+width: 100%;
+}
+
+
+
+
+li a {
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-ms-transition: background-color 1s;
+-o-transition: background-color 1s;
+transition: background-color 1s;  
+}
+
+li a:hover {
+background-color: #5bff00;
+text-decoration: underline; 
+}
+
+aside p {
+font-size: 0.87em;
+margin-top: 0%; 
+}
+   
+aside ol {
+font-size: 0.75em; 
+}
+
+/*Aside página Multimidia*/
+aside video {
+border: 1px solid #7E9F19;
+float: left;
+margin: 01.0416666% 01.0416666% 01.0419999% 0%;
+padding: 00.2083333%;
+height: 0%;
+width: 100%; 
+}
+    
+/*Formatação de Formulário*/
+
+
+form {
+width: 100%;
+margin: auto;
+}
+
+input, textarea {
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana,
+sans-serif;
+font-weight: normal;
+font-size: 90%;
+background-color: rgba(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+background-color: #dddddd;
+}
+
+.destaque {
+color: darkblue;
+}
+
+p#erroAno {
+color: red;
+font-weight: bold;
+margin: 0;
+}
+
+div#resultado {
+background: #dfd; 
+padding: 1%;
+}
+
+#resultadoCrescente {
+float: left;
+width: 50%;
+margin-right: 2%;
+}
+
+#dialog {
+display: none;
+}
+
+
+
+legend {
+color: #888888; 
+font-weight: bold;
+font-size: 90%;
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana,
+sans-serif;
+}
+
+fieldset {
+border-color: #a6a6a6;
+margin: 1%;
+}
+fieldset#sexo {
+width: 20%;    
+}
+form h3{
+text-align: center;
+}
+
+button {
+margin-top: 1%;
+display: block;
+}
+
+
+/*Formatando o Footer*/
+footer {
+border: #000066;
+font-size: 0.75em; 
+text-align: center;
+border-top: 1px solid #ffffff;
+clear: both;
+}
+
+footer a {
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-ms-transition: background-color 1s;
+-o-transition: background-color 1s;
+transition: background-color 1s;  
+}
+
+/*seletor para estilizar os Links ao posicionar o cursor do mouse*/
+footer a:hover {
+background-color: #5bff00; 
+text-decoration: underline;
+text-decoration: none;
+}
+
+
+
+/*Aqui começa o Menu de Navegação*/
+nav#menu {
+display: block;
+} 
+
+nav#menu ul {
+text-transform: uppercase;
+position: absolute;
+top: -20px;
+left: 670px;
+}
+
+nav#menu li {
+display: inline-block;
+background-color: #e6ffff;
+padding: 10px;
+margin: 2px;
+transition: background-color 1s;
+-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+-ms-transition: background-color 1s;
+-o-transition: background-color 1s;
+transition: background-color 1s;
+}
+
+nav#menu li:hover {
+background-color: #5bff00; 
+}
+    
+nav#menu a {
+text-decoration: none;
+}  
+
+nav#menu a:hover {
+color: #a6a6a6;
+}
+
+
+
+    

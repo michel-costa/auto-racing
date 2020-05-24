@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulários - Auto Racing Automobilismo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/jquery-ui.min.css">
+    <script type="text/javascript" src="_js/jquery.js"></script>
+    <script type="text/javascript" src="_js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="_js/script.js"></script>
+</head>
+
+<body>
+    <section id="container">
+        <header>
+            <h1>Auto Racing Automobilismo</h1>
+        </header>
+
+        <nav id="menu">
+            <ul type="disc">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="multimidia.html">Multimídia</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav>
+
+        <section id="places">
+            <article>
+
+                <form id="content" class="ui-widget-content ui-corner-all ui-widget-shadow">
+                    <h3>Formulário de Contato</h3>
+
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <label for="cNome">Nome</label> <input type="text" name="tNome" id="cNome" size="20"
+                            maxlength="30" placeholder="Nome Completo" />
+                        <label for="cSenha">Senha</label> <input type="password" name="tSenha" id="cSenha" size="8"
+                            maxlength="8" placeholder="8 Dígitos" />
+                        <label for="cmail">E-mail</label> <input type="email" name="tmail" id="cmail" size="20"
+                            maxlength="40" placeholder="usuario@gmail.com" />
+
+                        <fieldset id="sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMasc" /> <label for="cMasc">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem" /> <label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p>Data de Nascimento <input type="date" name="tNasc" id="cNasc" /></p>
+                    </fieldset>
+
+                    <fieldset id="enredeco">
+                        <legend>Endereço do Usuário</legend>
+                        <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13"
+                                maxlength="80" placeholder="Rua, Trav, Av, ..." /></p>
+                        <p><label for="cNum"> Número:</label> <input type="number" name="tNum" id="cNum" min="0"
+                                max="99999" /></p>
+                        <p><label for="cEst"> Estado:</label>
+                            <select name="tEst" id="cEst">
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="RS">Rio Grande do sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                </optgroup>
+                                <optgroup label="Região Centro Oeste">
+                                    <option value="DF" selected>Brasilia</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MT">Mato Grosso</option>
+                                </optgroup>
+                            </select></p>
+                        <p><label for="cCid"> Cidade:</label>
+                            <input type="text" name="tCid" id="cCid" maxlength="40" size="20"
+                                placeholder="Sua Cidade" /></p>
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <p><label form="cUrg">Grau de Urgência:</label>
+                            Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" />Máx</p>
+                        <p><label form="cMsg">Mensagem:</label>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
+                                placeholder="Deixe aqui sua mensagem"></textarea></p>
+                    </fieldset>
+                    <div>
+                        <button id="enviar">
+                            <span class="ui-icon ui-icon-mail-open"></span>
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+
+            </article>
+        </section>
+
+        <aside>
+            <h2>Carros Históricos</h2>
+            <ol>
+                <li><a href="https://www.koenigsegg.com/car/agera-rs/" target="_blank">Agera RS.</a></li>
+                <li><a href="https://www.koenigsegg.com/car/agera-r/" target="_blank">Agera R.</a></li>
+                <li><a href="https://www.koenigsegg.com/car/agera-s/" target="_blank">Agera S.</a></li>
+                <li><a href="https://www.koenigsegg.com/car/agera/" target="_blank">Agera.</a></li>
+            </ol><br>
+        </aside>
+
+    </section>
+    <footer>
+        <h2>CONTATO</h2>
+        <p>Endereço: Rua Visconde de Pirajá, n°151 - Ipanema</p>
+        <p>Rio de Janeiro - RJ</p>
+        <p>Telefones: +55 (21)97669-1390</p>
+        <p>E-mail: michel.mcs.admpf@gmail.com</p>
+        <h2>Nossa localização</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0652166809314!2d-43.20199238503296!3d-22.98462918497222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd510a72b2edd%3A0x515bfca497548329!2sR.%20Visc.%20de%20Piraj%C3%A1%2C%20151%20-%20Ipanema%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022410-003!5e0!3m2!1spt-BR!2sbr!4v1569355104297!5m2!1spt-BR!2sbr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        <h3>Redes Socias</h3>
+        <P>
+            <a href="https://www.youtube.com/channel/UCDJaZHSiXofu31kA9W-eEFA?view_as=subscriber"
+                target="_blank">Youtube
+            </a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram
+            </a>
+        </P>
+        <p>&copy; 2019 - Desenvolvido por <i>Michel Costa.</i> Todos os Direitos Reservados</p>
+    </footer>
+
+</body>
+
+</html>
